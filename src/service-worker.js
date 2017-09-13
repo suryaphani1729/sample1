@@ -1,6 +1,6 @@
 var cacheName = 'samplePwaCache-1';
 var filesToCache = [
- 
+   '/sample1/src/',
   '/sample1/src/index.html',
   '/sample1/src/main.js',
 ];
@@ -28,4 +28,13 @@ self.addEventListener('activate', function(e) {
     })
   );
   return self.clients.claim();
+});
+
+self.addEventListener('fetch', function(e) {
+  console.log('[ServiceWorker] Fetch', e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
 });
