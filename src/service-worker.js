@@ -1,5 +1,9 @@
 var cacheName = 'samplePwaCache';
-var filesToCache = [];
+var filesToCache = [
+  '/',
+  '/sample1/src/index.html',
+  '/sample1/src/main.js',
+];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
