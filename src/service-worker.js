@@ -1,6 +1,6 @@
-var cacheName = 'samplePwaCache';
+var cacheName = 'samplePwaCache-1';
 var filesToCache = [
-  '/',
+ 
   '/sample1/src/index.html',
   '/sample1/src/main.js',
 ];
