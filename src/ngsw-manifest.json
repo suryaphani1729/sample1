@@ -1,0 +1,29 @@
+"{
+  "group": {
+    "app": {
+      "url": {
+        "main.js": {
+          "hash": "2431d95f572a2a23ee6df7d619d2b68ad65f1084"
+        },
+        "favicon.ico": {
+          "hash": "164f9754ba7b676197a4974992da8fc3d3606dbf"
+        },
+     
+
+
+    
+
+
+        "index.html": {
+          "hash": "c536103ca1836310c60f7cc94b6fa14debcf2ddf"
+        },
+        "manifest.webapp": {
+          "hash": "a020306797abb92fe29c90bb2832b6f5783e2487"
+        }
+      }
+    }
+  },
+  "routing": {
+    "index": "/sample1/src/index.html"
+  }
+}"
