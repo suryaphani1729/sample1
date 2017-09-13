@@ -10,6 +10,17 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  Loading...
+  First PWA App
+  
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
+  }
+    
+    
+  </script>
 </body>
 </html>
