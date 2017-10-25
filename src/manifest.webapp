@@ -2,6 +2,11 @@
   "name": "Hello Mobile",
   "short_name": "Hello Mobile",
   "icons": [
+  {
+    "src": "logo.png",
+    "type": "image/png",
+    "sizes": "144x144"
+  }
   ],
   "theme_color": "#000000",
   "background_color": "#e0e0e0",
