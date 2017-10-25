@@ -9,8 +9,6 @@
   "display": "standalone",
   "orientation": "portrait",
    "related_applications": [{
-    "platform": "web"
-  }, {
     "platform": "play",
     "url": "https://play.google.com/store/apps/details?id=com.famesun.omr"
   }]
