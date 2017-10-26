@@ -1,4 +1,4 @@
-var cacheName = 'samplePwaCache-3';
+var cacheName = 'samplePwaCache-4';
 var filesToCache = [
    '/sample1/src/',
   '/sample1/src/index.html',
@@ -32,7 +32,7 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   console.log('[ServiceWorker] Fetch', e.request.url);
-  console.log(e.request);
+  console.log('requestt',e.request);
   e.respondWith(
     caches.match(e.request).then(function(response) {
       return response || fetch(e.request);
