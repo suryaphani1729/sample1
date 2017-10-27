@@ -13,6 +13,13 @@ function displayNotification() {
       reg.showNotification('Hello world!', options);
     });
   }
+  else{
+    
+    Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+      
+});
+  }
 }
 displayNotification();
 // icon: 'images/example.png',
