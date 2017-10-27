@@ -13,8 +13,8 @@ function displayNotification() {
         userVisibleOnly: true
       }).then(function(sub) {
         console.log('Endpoint URL: ', sub.endpoint);
-            var key = subscription.getKey('p256dh');
-  var auth = subscription.getKey('auth');
+            var key = sub.getKey('p256dh');
+  var auth = sub.getKey('auth');
             console.log('key: ', key);
             console.log('auth: ', auth);
            
