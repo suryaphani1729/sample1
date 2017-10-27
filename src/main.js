@@ -12,7 +12,12 @@ function displayNotification() {
          reg.pushManager.subscribe({
         userVisibleOnly: true
       }).then(function(sub) {
-        console.log('Endpoint URL: ', sub);
+        console.log('Endpoint URL: ', sub.endpoint);
+            var key = subscription.getKey('p256dh');
+  var auth = subscription.getKey('auth');
+            console.log('key: ', key);
+            console.log('auth: ', auth);
+           
       }).catch(function(e) {
         if (Notification.permission === 'denied') {
           console.warn('Permission for notifications was denied');
