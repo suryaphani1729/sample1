@@ -4,7 +4,7 @@ var filesToCache = [
   '/sample1/src/index.html',
   '/sample1/src/main.js',
 ];
-
+// I am new sevice worker
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
