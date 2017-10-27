@@ -1,4 +1,4 @@
-var cacheName = 'samplePwaCache-7';
+var cacheName = 'samplePwaCache-8';
 var filesToCache = [
    '/sample1/src/',
   '/sample1/src/index.html',
@@ -40,10 +40,16 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-self.addEventListener('notificationclose', function(e) {
+self.addEventListener('notificationclick', function(e) {
   var notification = e.notification;
   var primaryKey = notification.data.primaryKey;
+  var action = e.action;
 
-  console.log('Closed notification: ' + primaryKey);
+  if (action === 'close') {
+    notification.close();
+  } else {
+    clients.openWindow('http://www.example.com');
+    notification.close();
+  }
 });
 
