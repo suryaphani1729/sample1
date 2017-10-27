@@ -21,7 +21,16 @@
   
     
     
-    Notification.requestPermission(function(status) {
+   
+    
+    
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sample1/src/service-worker.js')
+             .then(function() { console.log('Service Worker Registered');
+                              
+                              
+                               Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
       if (Notification.permission == 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
@@ -30,12 +39,11 @@
   }
       
 });
-    
-    
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./sample1/src/service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
+                              
+                              
+                              
+                              
+                              });
   }
     var deferredPrompt;
 
