@@ -8,6 +8,24 @@ function displayNotification() {
       if (sub === null) {
         // Update UI to ask user to register for Push
         console.log('Not subscribed to push service!');
+        
+         reg.pushManager.subscribe({
+        userVisibleOnly: true
+      }).then(function(sub) {
+        console.log('Endpoint URL: ', sub.endpoint);
+      }).catch(function(e) {
+        if (Notification.permission === 'denied') {
+          console.warn('Permission for notifications was denied');
+        } else {
+          console.error('Unable to subscribe to push', e);
+        }
+      });
+        
+        
+        
+        
+        
+        
       } else {
         // We have a subscription, update the database
         console.log('Subscription object: ', sub);
