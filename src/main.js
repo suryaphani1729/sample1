@@ -11,7 +11,7 @@ function displayNotification() {
       } else {
         // We have a subscription, update the database
         console.log('Subscription object: ', sub);
-      }
+      });
          
          
       
