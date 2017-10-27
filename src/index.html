@@ -43,6 +43,9 @@ window.addEventListener('beforeinstallprompt', function(e) {
 });
 
 
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
     
   </script>
   <script src="main.js"></script>
