@@ -1,4 +1,4 @@
-var cacheName = 'samplePwaCache-6';
+var cacheName = 'samplePwaCache-7';
 var filesToCache = [
    '/sample1/src/',
   '/sample1/src/index.html',
