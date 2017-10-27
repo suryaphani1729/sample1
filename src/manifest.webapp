@@ -1,6 +1,7 @@
 {
   "name": "Hello Mobile",
   "short_name": "Hello Mobile",
+  "gcm_sender_id": "112639151816"
   "icons": [
   {
     "src": "logo.png",
