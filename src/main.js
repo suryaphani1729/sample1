@@ -14,4 +14,5 @@ function displayNotification() {
     });
   }
 }
+displayNotification();
 // icon: 'images/example.png',
