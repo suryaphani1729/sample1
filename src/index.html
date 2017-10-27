@@ -13,7 +13,16 @@
   First PWA App
   
   
+  
+   <script src="main.js"></script>
+  
   <script>
+    
+    Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
+    
+    
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker
              .register('./sample1/src/service-worker.js')
@@ -43,11 +52,9 @@ window.addEventListener('beforeinstallprompt', function(e) {
 });
 
 
-Notification.requestPermission(function(status) {
-    console.log('Notification permission status:', status);
-});
+
     
   </script>
-  <script src="main.js"></script>
+ 
 </body>
 </html>
