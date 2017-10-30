@@ -29,7 +29,7 @@
   "start_url": "/sample1/src/index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "prefer_related_applications": false,
+  "prefer_related_applications": true,
    "related_applications": [{
     "platform": "play",
     "id": "livio.pack.lang.en_US",
