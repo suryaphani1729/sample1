@@ -70,6 +70,7 @@
           });
     console.log("-----------token-----------");
     messaging.getToken().then(function(currentToken) {
+      console.log("currentToken: "+currentToken);
       if (currentToken) {
         sendTokenToServer(currentToken);
         updateUIForPushEnabled(currentToken);
